@@ -40,6 +40,17 @@
             <img src="images/NeuschwansteinCastle.jpg" alt="Germany" width="1000" style="display: block; margin-left: auto; margin-right: auto;">
           </div>
 
+          <script>
+            document.addEventListener('contextmenu', function(e) {
+              e.preventDefault();
+            });
+            document.addEventListener('dragstart', function(e) {
+              if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+              }
+            });
+          </script>
+
   <footer>
     <p>&copy; 2025 Traveler All rights reserved.</p>
   </footer>

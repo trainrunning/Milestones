@@ -47,5 +47,16 @@
         images[0].classList.add('active'); // Start with the first image
     });
   </script>
+
+<script>
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+  document.addEventListener('dragstart', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
