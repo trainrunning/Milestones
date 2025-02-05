@@ -114,6 +114,28 @@ header {
   margin-top: 20px; /* Adjust the space between the text and the top container */
 }
 
+/* Container for grouping images */
+.figure-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+/* Individual figures */
+.figure-container figure {
+  max-width: 32%; /* Allows three images per row on larger screens */
+  min-width: 300px; /* Prevents images from getting too small */
+  text-align: center;
+}
+
+/* Ensure images scale properly */
+.figure-container img {
+  width: 100%;
+  height: auto;
+}
+
 /* Footer */
 footer {
   text-align: center;
