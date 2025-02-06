@@ -59,9 +59,32 @@
     <div class="figure-container">
       <figure>
         <img src="images/LakeEibseeCollage.jpg" alt="Collage" class="collage-img">
-         
-  
-  
+        <br>
+  <h3>Day 3-5: Hallstatt, Austria – A Fairytale Escape</h3>
+    <p>Situated between a peaceful lake and soaring mountains, Hallstatt is often hailed as one of the most beautiful villages in the world. Its UNESCO World Heritage status, resemblance to Arendelle from Frozen, and social media fame have made it a sought-after destination, drawing travelers eager to experience its breathtaking scenery. <p>We stayed in a converted mill, Waldbachsäge, which had been renovated into a modern apartment and inherited from the owner’s grandmother. Its lakeside location provided a peaceful retreat with direct water access, where swans greeted us each morning as they foraged for fallen apples along the private boat ramp.</p> <p>If your travels take you to Hallstatt, take your time—it's a gorgeous destination with plenty of nearby activities. Over two days, we explored the salt mine, ventured into the ice cave, and took in the panoramic views from the 5-Fingers lookout. While the sights were unforgettable, what truly made our visit special was where we stayed.</p>
+    <br>
+    <div class="gallery">
+      <img src="images/people-sitting-on-bench-viewing-lookout.jpg" alt="Image 1" onclick="openLightbox('images/people-sitting-on-bench-viewing-lookout.jpg')">
+      <img src="images/inside-salt-mine-pillar.jpg" alt="Image 2" onclick="openLightbox('images/inside-salt-mine-pillar.jpg')">
+      <img src="images/hallstatt-village.jpg" alt="Image 3" onclick="openLightbox('images/hallstatt-village.jpg')">
+      <img src="images/hallstatt-swans-gliding-on-water.jpg" alt="Image 4" onclick="openLightbox('images/hallstatt-swans-gliding-on-water.jpg')">
+      <img src="images/hallstatt-swans-foraging.jpg" alt="Image 5" onclick="openLightbox('images/hallstatt-swans-foraging.jpg')">
+      <img src="images/hallstatt-classic-view-village-church-in-the-distance.jpg" alt="Image 6" onclick="openLightbox('images/hallstatt-classic-view-village-church-in-the-distance.jpg')">
+      <img src="images/Hallstatt-bridge-overlooking-house.jpg" alt="Image 7" onclick="openLightbox('images/Hallstatt-bridge-overlooking-house.jpg')">
+      <img src="images/five-fingers-overhead-view-of-lake.jpg" alt="Image 8" onclick="openLightbox('images/five-fingers-overhead-view-of-lake.jpg')">
+      <img src="images/five-fingers-lookout-lake-clouds.jpg" alt="Image 9" onclick="openLightbox('images/five-fingers-lookout-lake-clouds.jpg')">
+      <img src="images/five-fingers-lookout-clouds.jpg" alt="Image 10" onclick="openLightbox('images/five-fingers-lookout-clouds.jpg')">
+      <img src="images/five-fingers-lookout-kids-lake.jpg" alt="Image 11" onclick="openLightbox('images/five-fingers-lookout-kids-lake.jpg')">
+      <img src="images/bright-sun-lookout.jpg" alt="Image 12" onclick="openLightbox('images/bright-sun-lookout.jpg')">
+      
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+
     
 
     <!-- Italy Section -->
@@ -79,6 +102,16 @@
     </section>
 </div>
 
+<script>
+  function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+  }
+
+  function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
 <script>
   document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
